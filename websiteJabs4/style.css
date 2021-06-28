@@ -1,0 +1,78 @@
+body {
+  background: lightblue;
+}
+body .course {
+  position: absolute;
+  width: 97px;
+  height: 97px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 60px;
+}
+body .language {
+  background-color: darkred;
+}
+body #spanish1 {
+  left: 200px;
+  top: 600px;
+}
+body #spanish2 {
+  left: 200px;
+  top: 500px;
+}
+body #spanish3 {
+  left: 200px;
+  top: 400px;
+}
+body #spanish4 {
+  left: 200px;
+  top: 300px;
+}
+body #spanishAP {
+  left: 200px;
+  top: 200px;
+}
+body .science {
+  background-color: darkgreen;
+}
+body #bio {
+  left: 600px;
+  top: 600px;
+  width: 197px;
+}
+body #bioHon {
+  left: 800px;
+  top: 600px;
+  width: 197px;
+}
+body #chem {
+  left: 600px;
+  top: 500px;
+  width: 197px;
+}
+body #chemHon {
+  left: 800px;
+  top: 500px;
+  width: 197px;
+}
+body #physics {
+  left: 600px;
+  top: 400px;
+}
+body #physicsAP {
+  left: 700px;
+  top: 400px;
+}
+body #chemAP {
+  left: 800px;
+  top: 400px;
+}
+body #bioAP {
+  left: 900px;
+  top: 400px;
+}
+
+/*# sourceMappingURL=style.css.map */
