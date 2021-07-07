@@ -1,0 +1,128 @@
+body {
+  background: tan;
+  font-family: Georgia, sans-serif;
+}
+
+body #title {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 400%;
+    text-decoration: underline;
+}
+
+body .course {
+  position: absolute;
+  width: 97px;
+  height: 97px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 80%;
+}
+body .language {
+  background-color: darkred;
+}
+body #spanish1 {
+  left: 200px;
+  top: 1600px;
+}
+body #spanish2 {
+  left: 200px;
+  top: 1500px;
+}
+body #spanish3 {
+  left: 200px;
+  top: 1400px;
+}
+body #spanish4 {
+  left: 200px;
+  top: 1300px;
+}
+body #spanishAP {
+  left: 200px;
+  top: 1200px;
+}
+body .science {
+  background-color: darkgreen;
+}
+body #bio {
+  left: 600px;
+  top: 1600px;
+  width: 197px;
+}
+body #bioHon {
+  left: 800px;
+  top: 1600px;
+  width: 197px;
+}
+body #chem {
+  left: 600px;
+  top: 1500px;
+  width: 197px;
+}
+body #chemHon {
+  left: 800px;
+  top: 1500px;
+  width: 197px;
+}
+body #physics {
+  left: 600px;
+  top: 1400px;
+}
+body #physicsAP {
+  left: 700px;
+  top: 1400px;
+}
+body #chemAP {
+  left: 800px;
+  top: 1400px;
+}
+body #bioAP {
+  left: 900px;
+  top: 1400px;
+}
+
+
+body #barrier{
+    position: absolute;
+    top: 1100px;
+    left: -20px;
+    width: 110%;
+    height: 50px;
+    background: grey;
+}
+
+
+body .grade {
+    position: relative;
+    top: 150px;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+body [type="number"] {
+    left: 50%;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    font-size: 200%;
+    width: 90px;
+    font-family: Courier new, sans serif;
+}
+
+#calculateButton {
+    position: absolute;
+    top: 950px;
+    left: 45%;
+}
+
+body .bob {
+    position: relative;
+    text-align: center;
+    top:200px;
+}
+
