@@ -1,0 +1,442 @@
+body {
+  background: white;
+  font-family: Verdana, sans-serif;
+
+
+}
+
+body #title {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 400%;
+    text-decoration: underline;
+}
+
+
+body #top_bar {
+    position: fixed;
+
+    left: 0px;
+    top: 0px;
+
+    width: 100%;
+    height: 75px;
+
+    background: lightslategrey;
+}
+
+body #central_band {
+    position: absolute;
+
+    left: 5%;
+    top: 0px;
+
+    width: 90%;
+    height: 3000px;
+
+    background: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body #barrier{
+    position: absolute;
+    top: 1100px;
+    left: -20px;
+    width: 110%;
+    height: 50px;
+    background: grey;
+}
+
+body #gradeCalculator {
+    position: absolute;
+    left: 50%;
+    height: 600px;
+    width: 1000px;
+    top: 350px;
+    transform: translate(-50%);
+
+
+}
+
+body .grade {
+    position: absolute;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+body [type="number"] {
+    left: 50%;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    font-size: 200%;
+    width: 90px;
+    font-family: Courier new, sans serif;
+
+    height: 75px;
+    width: 75px;
+}
+
+
+
+body .pastGrade {
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    font-size: 300%;
+}
+
+
+body .year1 {
+    left: 200px;
+}
+body .year2 {
+    left: 300px;
+}
+body .year3 {
+    left: 400px;
+}
+body .year4 {
+    left: 500px;
+}
+
+body .foreign-language-past-grade {
+    top: 50px;
+}
+body .science-past-grade {
+    top: 150px;
+}
+body .history-past-grade {
+    top: 250px;
+}
+body .english-past-grade {
+    top: 350px;
+}
+body .maths-past-grade {
+    top: 450px;
+}
+
+body #row-1-title {
+    position: absolute;
+    top: 50px;
+}
+body #row-2-title {
+    position: absolute;
+    top: 150px;
+}
+body #row-3-title {
+    position: absolute;
+    top: 250px;
+}
+body #row-4-title {
+    position: absolute;
+    top: 350px;
+}
+body #row-5-title {
+    position: absolute;
+    top: 450px;
+}
+
+
+#add-year-button {
+    position: absolute;
+    left: 45%;
+    top: 0px;
+}
+#remove-year-button {
+    position: absolute;
+    left: 55%;
+    top: 0px;
+}
+
+#right_analysis {
+    position: absolute;
+    left: 100px;
+
+}
+
+#average-grade-column-title {
+    position: absolute;
+    left: 525px;
+}
+
+#avgrade1 {
+    position: absolute;
+    left: 550px;
+    top: 50px;
+}
+#avgrade2 {
+    position: absolute;
+    left: 550px;
+    top: 150px;
+}
+#avgrade3 {
+    position: absolute;
+    left: 550px;
+    top: 250px;
+}
+#avgrade4 {
+    position: absolute;
+    left: 550px;
+    top: 350px;
+}
+#avgrade5 {
+    position: absolute;
+    left: 550px;
+    top: 450px;
+}
+
+
+body .desired-grades {
+    position: absolute;
+    left: 600px;
+    height: 75px;
+    width: 75px;
+    font-size: 150%;
+}
+
+
+body #desired-grade-column-title {
+    position: absolute;
+    left: 665px;
+    width: 300px;
+}
+
+body #desiredGrade1 {
+    position: absolute;
+    top: 50px;
+}
+body #desiredGrade2 {
+    position: absolute;
+    top: 150px;
+}
+body #desiredGrade3 {
+    position: absolute;
+    top: 250px;
+}
+body #desiredGrade4 {
+    position: absolute;
+    top: 350px;
+}
+body #desiredGrade5 {
+    position: absolute;
+    top: 450px;
+}
+
+
+
+#discrepancy-column-title {
+    position: absolute;
+    left: 800px;
+}
+
+body .discrepancies {
+    position: absolute;
+    left: 800px;
+}
+
+body #discrepancy1 {
+    position: absolute;
+    top: 50px;
+}
+body #discrepancy2 {
+    position: absolute;
+    top: 150px;
+}
+body #discrepancy3 {
+    position: absolute;
+    top: 250px;
+}
+body #discrepancy4 {
+    position: absolute;
+    top: 350px;
+}
+body #discrepancy5 {
+    position: absolute;
+    top: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+body #courseGrid {
+    position: absolute;
+    left: 50%;
+    top: 1500px;
+    width: 875px;
+    height: 500px;
+    transform: translate(-50%);
+}
+
+body #course_grid_year_labels {
+    position: absolute;
+    left: 20%;
+    top: 1525px;
+}
+body #course_grid_year_labels * {
+    position: absolute;
+    width: 200px;
+}
+body #course_grid_year_1_label {
+    top: 375px;
+}
+body #course_grid_year_2_label {
+    top: 250px;
+}
+body #course_grid_year_3_label {
+    top: 125px;
+}
+body #course_grid_year_4_label {
+    top: 0px;
+}
+
+
+
+body .courseCell * {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    background-color: CadetBlue;
+    outline: 3px solid black;
+
+}
+
+body .y1 {
+    top: 0px;
+}
+body .y2 {
+    top: 125px;
+}
+body .y3 {
+    top: 250px;
+}
+body .y4 {
+    top: 375px;
+}
+
+body .c1 {
+    left: 0px;
+}
+body .c2 {
+    left: 125px;
+}
+body .c3 {
+    left: 250px;
+}
+body .c4 {
+    left: 375px;
+}
+body .c5 {
+    left: 500px;
+}
+body .c6 {
+    left: 625px;
+}
+body .c7 {
+    left: 750px;
+}
+
+body #courseHome {
+    position: absolute;
+    left: 50%;
+    top: 2100px;
+    transform: translate(-50%);
+    width: 75%;
+    height: 700px;
+    background: grey;
+}
+
+body .course {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  box-shadow: 0 0 0 1pt black;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 80%;
+
+}
+body .language {
+  background-color: darkred;
+}
+body #spanish1 {
+  left: 0px;
+  top: 0px;
+}
+body #spanish2 {
+  left: 0px;
+  top: 125px;
+}
+body #spanish3 {
+  left: 0px;
+  top: 250px;
+}
+body #spanish4 {
+  left: 0px;
+  top: 375px;
+}
+body #spanishAP {
+  left: 0px;
+  top: 500px;
+}
+
+body .science {
+  background-color: darkgreen;
+}
+body #bio {
+  left: 125px;
+  top: 0px;
+}
+body #bioHon {
+  left: 125px;
+  top: 125px;
+}
+body #chem {
+  left: 125px;
+  top: 250px;
+}
+body #chemHon {
+  left: 125px;
+  top: 375px;
+}
+body #physics {
+  left: 125px;
+  top: 500px;
+}
+body #physicsAP {
+  left: 250px;
+  top: 0px;
+}
+body #chemAP {
+  left: 250px;
+  top: 125px;
+}
+body #bioAP {
+  left: 250px;
+  top: 250px;
+}
+
+
+
+
+
+

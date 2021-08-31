@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>QuickCourse</title>
+	<link rel="stylesheet" href="style.css">
+
+    <script src = "jquery-3.6.0.min.js"></script>
+    <script src = "jquery-ui.js"></script>
+    <script src = "course.js"></script>
+    <script src = "gpa.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+    <div id="central_band"></div>
+
+
+	<h1 id="title">Lorem Ipsum</h1>
+
+
+    <div id="gradeCalculator">
+
+        <h3 id="row-1-title">World Language</h3>
+        <h3 id="row-2-title">Maths</h3>
+        <h3 id="row-3-title">Science</h3>
+        <h3 id="row-4-title">Social Studies</h3>
+        <h3 id="row-5-title">Other 1</h3>
+
+
+        <input class="pastGrade year1 foreign-language-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year2 foreign-language-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year3 foreign-language-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year4 foreign-language-past-grade"type="number" size="20" oninput="updateAvgs()">
+
+        <input class="pastGrade year1 science-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year2 science-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year3 science-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year4 science-past-grade"type="number" size="20" oninput="updateAvgs()">
+
+        <input class="pastGrade year1 history-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year2 history-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year3 history-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year4 history-past-grade"type="number" size="20" oninput="updateAvgs()">
+
+        <input class="pastGrade year1 english-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year2 english-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year3 english-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year4 english-past-grade"type="number" size="20" oninput="updateAvgs()">
+
+        <input class="pastGrade year1 maths-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year2 maths-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year3 maths-past-grade"type="number" size="20" oninput="updateAvgs()">
+        <input class="pastGrade year4 maths-past-grade"type="number" size="20" oninput="updateAvgs()">
+
+
+
+        <button id="add-year-button" onclick="addYear()">Add year</button>
+        <button id="remove-year-button" onclick="removeYear()">Remove year</button>
+
+        <div id="right_analysis">
+            <h3 id="average-grade-column-title"><u>Average</u></h3>
+
+            <h4 id="avgrade1"></h4>
+            <h4 id="avgrade2"></h4>
+            <h4 id="avgrade3"></h4>
+            <h4 id="avgrade4"></h4>
+            <h4 id="avgrade5"></h4>
+
+            <h3 id="desired-grade-column-title"><u>Goal</u></h3>
+
+            <div class="desired-grades">
+                <input id="desiredGrade1" type="number" size="20" oninput="updateAvgs()">
+                <input id="desiredGrade2" type="number" size="20" oninput="updateAvgs()">
+                <input id="desiredGrade3" type="number" size="20" oninput="updateAvgs()">
+                <input id="desiredGrade4" type="number" size="20" oninput="updateAvgs()">
+                <input id="desiredGrade5" type="number" size="20" oninput="updateAvgs()">
+            </div>
+
+
+            <h3 id="discrepancy-column-title"><u>Discrepancy</u></h3>
+
+            <div class="discrepancies">
+                <h4 id="discrepancy1"></h4>
+                <h4 id="discrepancy2"></h4>
+                <h4 id="discrepancy3"></h4>
+                <h4 id="discrepancy4"></h4>
+                <h4 id="discrepancy5"></h4>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div id="barrier"></div>
+
+
+
+
+
+    <div id="courseGrid" class="courseCell">
+        <div class="y1 c1"></div>
+        <div class="y1 c2"></div>
+        <div class="y1 c3"></div>
+        <div class="y1 c4"></div>
+        <div class="y1 c5"></div>
+        <div class="y1 c6"></div>
+        <div class="y1 c7"></div>
+
+        <div class="y2 c1"></div>
+        <div class="y2 c2"></div>
+        <div class="y2 c3"></div>
+        <div class="y2 c4"></div>
+        <div class="y2 c5"></div>
+        <div class="y2 c6"></div>
+        <div class="y2 c7"></div>
+
+        <div class="y3 c1"></div>
+        <div class="y3 c2"></div>
+        <div class="y3 c3"></div>
+        <div class="y3 c4"></div>
+        <div class="y3 c5"></div>
+        <div class="y3 c6"></div>
+        <div class="y3 c7"></div>
+
+        <div class="y4 c1"></div>
+        <div class="y4 c2"></div>
+        <div class="y4 c3"></div>
+        <div class="y4 c4"></div>
+        <div class="y4 c5"></div>
+        <div class="y4 c6"></div>
+        <div class="y4 c7"></div>
+    </div>
+    <div id="course_grid_year_labels">
+        <h2 id="course_grid_year_1_label">Year 1</h2>
+        <h2 id="course_grid_year_2_label">Year 2</h2>
+        <h2 id="course_grid_year_3_label">Year 3</h2>
+        <h2 id="course_grid_year_4_label">Year 4</h2>
+    </div>
+
+    <div id="courseHome">
+        <div class="course language" id="spanish1"><h3>Spanish I</h3></div>
+        <div class="course language" id="spanish2"><h3>Spanish II</h3></div>
+        <div class="course language" id="spanish3"><h3>Spanish III</h3></div>
+        <div class="course language" id="spanish4"><h3>Spanish IV</h3></div>
+        <div class="course language" id="spanishAP"><h3>AP Spanish</h3></div>
+
+
+        <div class="course science" id="bio"><h3>Biology</h3></div>
+        <div class="course science"id="bioHon"><h3>Hon Bio</h3></div>
+        <div class="course science"id="chem"><h3>Chemical Studies</h3></div>
+        <div class="course science"id="chemHon"><h3>Hon Chem</h3></div>
+        <div class="course science"id="physics"><h3>Physics</h3></div>
+        <div class="course science"id="physicsAP"><h3>AP Physics</h3></div>
+        <div class="course science" id="chemAP"><h3>AP Chem</h3></div>
+        <div class="course science" id="bioAP"><h3>AP Bio</h3></div>
+    </div>
+
+
+    <div id="top_bar"></div>
+
+
+
+    <script src = "jquery-3.6.0.min.js"></script>
+    <script src = "jquery-ui.js"></script>
+    <script src = "course.js"></script>
+    <script src = "gpa.js"></script>
+
+
+
+
+
+
+</body>
+
+
+</html>
